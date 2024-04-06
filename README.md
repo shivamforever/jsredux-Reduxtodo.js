@@ -1,5 +1,5 @@
 # How to install & run ?
-
+ 
 First clone the repository from Github and switch to the new directory :
 
     $ git clone https://github.com/shivamforever/jsredux-Reduxtodo.js.git
