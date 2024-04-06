@@ -1,0 +1,69 @@
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.app {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100vw;
+}
+
+/* little bit styling for input box componenet */
+.inputbox {
+    width: 43%;
+    height: 18rem;
+}
+
+/* little bit styling for list box componenet */
+.listbox {
+    width: 50%;
+    max-height: 18rem;
+    overflow: scroll;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    margin-left: 36px;
+}
+
+/* styling for custom scrollbar in todo list view scrollbar */
+.listbox::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+}
+
+.listbox::-webkit-scrollbar-track {
+    background: none;
+}
+
+.listbox::-webkit-scrollbar-thumb {
+    background: black;
+    border-radius: 4px;
+}
+
+.listbox::-webkit-scrollbar-thumb:hover {
+    cursor: pointer;
+}
+
+td {
+    min-width: 6rem;
+}
+
+/* little bit styling for responsiveness */
+@media only screen and (max-width: 1000px) {
+    .app {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .inputbox {
+        width: 100%;
+    }
+
+    .listbox {
+        width: 100%;
+        margin-left: 0;
+    }
+}
